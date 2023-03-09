@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1> Tính điểm trung bình và tổng  </h1>
+<input id="b">
+<button onclick="tinh()">Tính</button>
+<p id="kq">Kêt quả
+    <input>
+<script>
+   // let diemLy = prompt("mời nhập điểm toán")*1;
+   // let diemHoa = prompt("mời nhập điểm hóa học")*1;
+   // let diemSinhHoc = prompt("mời nhập điểm sinh học")*1;
+   // let avg = (diemLy+diemSinhHoc+diemHoa)/3;
+   // alert("diem trung la : " + avg);
+
+// các cách nhập dữ liệu
+   // sử  dung prompt
+   // let a = prompt("nhâp vào một số a");
+   // sử dụng thẻ input của html
+   function tinh(){
+       let b = document.getElementById("b").value;
+       // tính
+       // output
+       // alert("giá trị mới nhập là " + b);
+       // console.log("số vừa nhập là "+ b);
+       document.getElementById("kq").innerText="giá trị mới nhập là: " + b;
+
+       // in ra
+   }
+
+
+</script>
+
+</body>
+</html>
