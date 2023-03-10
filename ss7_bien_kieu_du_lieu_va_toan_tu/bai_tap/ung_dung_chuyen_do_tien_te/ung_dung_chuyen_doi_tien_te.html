@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -7,15 +7,40 @@
 
 
 <body>
-<b>Amoount</b>
-<b>From curency</b>
-<b>To curency</b><br>
-<input type="text">
-<input type="text">
-<input type="text">
+<p>Amount</p>
+<input type="text" id="ab">
+<p>From Currecy</p>
+<select id="from">
+    <option value="USD">USD</option>
+    <option value="VND">VietNam</option>
+</select>
+<p>To Currecy</p>
+<select id="to">
+    <option value="VND">VietNam</option>
+    <option value="USD">USD</option>
+</select>
+<button onclick="chuyenTien()">Convert</button>
+<b id="123">Kết Quả:</b>
+
+<script>
+    function chuyenTien() {
+
+        let tienCanChuyen = document.getElementById("ab").value;
+        let tienChuaDoi = document.getElementById("from").value;
+        let tienDaDoi = document.getElementById("to").value;
+        if (tienChuaDoi == "VND" && tienDaDoi == "VND") {
+            document.getElementById("123").innerText = "Tiền đã đổi: " + tienCanChuyen + " VND";
+        } else if (tienChuaDoi == "VND" && tienDaDoi == "USD") {
+            document.getElementById("123").innerText = (tienCanChuyen / 23000 + "USD")
+        } else if (tienChuaDoi == "USD" && tienDaDoi == "VND") {
+            document.getElementById("123").innerText = (tienCanChuyen * 23000 + "VND");
+        } else {
+            document.getElementById("123").innerText = (tienCanChuyen + "USD");
+        }
+    }
 
 
-
+</script>
 
 
 </body>
