@@ -1,10 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let a = + prompt("Nhập A");
+    let b = + prompt("Nhập B");
+    let c = + prompt("Nhập C");
+    let denta = (b*b - 4*a*c);
+    if ( denta < 0){
+        alert("Phương trình vô nghiệm");
+    }else if (denta == 0){
+        alert("Phương trình có nghiệm ="+ -b/(2*a));
+    }else {
+        alert("Phương trình có hai nghiệm phân biệt x1="+ (-b+Math.sqrt(denta))/(2*a) + "và x2 ="+ (-b-Math.sqrt(denta))/(2*a));
+    }
+
+</script>
+
 </body>
 </html>
