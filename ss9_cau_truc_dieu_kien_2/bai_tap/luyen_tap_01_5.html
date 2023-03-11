@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let diemHocKy1 = + prompt("Nhập Điểm Học Kỳ 1");
+    let diemHocKy2 = + prompt("Nhập Điểm Học Kỳ 2");
+    let diemHocKyCuoi = + prompt("Nhập Điểm Cả Năm");
+    let trungBinh = (diemHocKy1 + diemHocKy2 + diemHocKyCuoi) / 3;
+    if (trungBinh >= 9.0) {
+        document.write("Học Sinh Giỏi");
+    }else if (trungBinh >= 7.5 && trungBinh < 9.0) {
+        document.write("Học Sinh Khá" );
+    } else if (trungBinh >= 5.0 && trungBinh < 7.5) {
+        document.write("Học Sinh Trung Bình");
+    } else {
+        document.write("Học Sinh Yếu");
+    }
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let doanhSo = + prompt("Nhập doanh số");
+    let hoaHong
+    if (doanhSo >= 10 && doanhSo < 30) {
+        hoaHong = doanhSo * 0.03
+        alert("Hoa hồng nhận được là" + hoaHong + 'triệu đồng');
+    } else if (doanhSo >= 30 && doanhSo < 50) {
+        hoaHong = doanhSo * 0.05
+        alert("Hoa hồng nhận được là" + hoaHong + 'triệu đồng');
+    } else if (doanhSo >= 50) {
+        hoaHong = doanhSo * 0.07
+        alert("Hoa hồng nhận được là" + hoaHong + 'triệu đồng');
+    }
+
+
+</script>
+
+</body>
+</html>
