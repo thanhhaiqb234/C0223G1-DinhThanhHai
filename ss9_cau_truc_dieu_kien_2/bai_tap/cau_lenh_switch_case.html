@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="thang" type="text">
+<button onclick="tinhngay()">Tinh số ngày</button>
+<p id="ketQua"></p>
+
+<script>
+    function tinhngay() {
+        let month = document.getElementById("thang").value * 1;
+        switch (month) {
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                document.getElementById("ketQua").innerText = "Tháng có 31 ngày"
+                break;
+            case 2:
+                document.getElementById("ketQua").innerText = "Tháng có 28 hoặc 29 ngày"
+                break;
+            default:
+                document.getElementById("ketQua").innerText = "Tháng có 30 ngày"
+
+        }
+    }
+
+
+</script>
+
+</body>
+</html>
