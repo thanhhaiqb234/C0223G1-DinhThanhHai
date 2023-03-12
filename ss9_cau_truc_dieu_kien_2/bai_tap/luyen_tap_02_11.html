@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let tienChiuThue = +prompt("nhập số tiền chịu thuế (Triệu Đồng");
+    let tienThue
+    if (tienChiuThue <= 10) {
+        tienThue = tienChiuThue * 5 / 100
+        alert("Số tiền cần phải nộp là =" + tienThue);
+    } else if (tienChiuThue <= 30) {
+        tienThue = tienChiuThue * 10 / 100
+        alert("Số tiền cần phải nộp là =" + tienThue);
+    } else if (tienChiuThue <= 50) {
+        tienThue = tienChiuThue * 15 / 100
+        alert("Số tiền cần phải nộp là =" + tienThue);
+    } else {
+        tienThue = tienChiuThue * 20 / 100
+        alert("Số tiền cần phải nộp là =" + tienThue);
+    }
+</script>
+
+</body>
+</html>

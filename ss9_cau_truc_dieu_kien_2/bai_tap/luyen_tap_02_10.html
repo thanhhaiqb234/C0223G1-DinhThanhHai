@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+let luongDien = + prompt("Nhập số lượng điện đã dùng KWh =");
+let soTien
+if (luongDien <= 50){
+    soTien = luongDien * 1.678
+    alert("Số tiền phải trả =" + soTien);
+}else if (luongDien <= 100){
+    soTien = luongDien * 1.734
+    alert("Số tiền phsir trả ="+ soTien);
+}else if (luongDien <= 200){
+    soTien = luongDien * 2.014
+    alert("Số tiền phải trả ="+ soTien);
+}else {
+    soTien = luongDien * 2.500
+    alert("Số tiền phải trả là"+ soTien);
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let soTienVay = +prompt("Nhập số tiền cần vay");
+    let soThangVay = +prompt("Nhập số tháng vay");
+    let laiSuat = +prompt("Nhập số phần trăm lãi suất");
+    let tongTien = soTienVay * Math.pow(1 + laiSuat / 12, soThangVay)
+    let soTienLai = tongTien - soTienVay
+    alert("Số tiền lãi cần phải trả là" + soTienLai);
+</script>
+
+</body>
+</html>
