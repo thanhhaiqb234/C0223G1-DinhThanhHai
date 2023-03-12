@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Caculator</h2>
+<input id="number1" type="text" name="" placeholder="Nhập sô thứ nhất">
+<input id="number2" type="text" name="" placeholder="Nhập số thứ hai"><br><br>
+
+<button onclick="Add()">Addition(+)</button>
+<button onclick="Sub()">Subtraction(-)</button>
+<button onclick="Mul()">Multiplication(X)</button>
+<button onclick="Div()">Division(/)</button>
+<p id="Resulf"></p>
+</body>
+<script>
+    function Add() {
+        let sothunhat = document.getElementById('number1').value * 1;
+        let sothuhai = document.getElementById("number2").value * 1;
+        let tong = (sothunhat + sothuhai);
+        let Resulf;
+        Resulf = "Resulf: " + (tong);
+
+        document.getElementById("Resulf").innerHTML = Resulf;
+    }
+
+    function Sub() {
+        let sothunhat = document.getElementById('number1').value * 1;
+        let sothuhai = document.getElementById('number2').value * 1;
+        let hieu = (sothunhat - sothuhai);
+        let Resulf;
+        Resulf = 'Resulf: ' + (hieu);
+
+        document.getElementById("Resulf").innerHTML = Resulf;
+    }
+
+    function Mul() {
+        let sothunhat = document.getElementById('number1').value * 1;
+        let sothuhai = document.getElementById('number2').value * 1;
+        let mul = (sothunhat * sothuhai);
+        let Resulf;
+        Resulf = 'Resulf: ' + (mul);
+        document.getElementById('Resulf').innerHTML = Resulf
+    }
+
+    function Div() {
+        let sothunhat = document.getElementById('number1').value * 1;
+        let sothuhai = document.getElementById('number2').value * 1;
+        let div = (sothunhat / sothuhai);
+        let Resulf;
+        Resulf = 'Resulf: ' + (div);
+        document.getElementById('Resulf').innerHTML = Resulf
+
+    }
+</script>
+
+</body>
+</html>
